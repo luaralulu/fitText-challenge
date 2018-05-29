@@ -57,7 +57,8 @@
         <form>
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <p class="intro-text">Enter the text below, and use the slider to resize the DIV.</p>
+              <p class="intro-text">Enter the text in the input box to change the text in the DIV.</p>
+              <p class="d-none d-md-block">Use the slider to resize the DIV.</p>
 
               <input id="txt" type="text" maxlength="100" value="The text to fit" />
 
@@ -95,8 +96,13 @@
     <div class="container">
       <div class="col-lg-8 mx-auto">
         <h2>Suggestions of Improvements</h2>
-        <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-        <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+        <ul class="list-group">
+          <li class="list-group-item">The fitText function should listen for size changes to the parent element.</li>
+          <li class="list-group-item">The fitText function should listen for text changes for the element.</li>
+          <li class="list-group-item">Align text to the middle of the parent container in all situations.</li>
+          <li class="list-group-item">Add unit tests for fitText function.</li>
+          <li class="list-group-item">Refactor code utilising ES6. (add Babel or other lybraries to convert javascript code before minifying).</li>
+        </ul>
       </div>
     </div>
   </section>

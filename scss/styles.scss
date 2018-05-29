@@ -5,6 +5,13 @@ body {
 input {
   padding: 3px;
   width: 630px;
+
+  @media (max-width: 768px) {
+    width: 400px;
+  }
+  @media (max-width: 481px) {
+    width: 250px;
+  }
 }
 
 .output-div {
@@ -21,4 +28,11 @@ input {
   padding: 5px;
 
   vertical-align: middle;
+
+  @media (max-width: 768px) {
+    width: 400px;
+  }
+  @media (max-width: 481px) {
+    width: 250px;
+  }
 }
