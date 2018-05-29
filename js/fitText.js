@@ -1,6 +1,20 @@
 var fitText = function(e) {
   $(e).css("white-space", "nowrap");
 
+  // Scale the DIV
+  $("#myRange").on("input", function() {
+    $(e)
+      .parent()
+      .css("width", this.value + "px");
+    resize(e);
+  });
+
+  // Change the DIV text
+  $("#txt").on("input", function() {
+    $(e).text(this.value);
+    resize(e);
+  });
+
   var resize = function(e) {
     var fontSize = parseFloat($(e).css("font-size"));
 
@@ -37,15 +51,3 @@ var fitText = function(e) {
 
   resize(e);
 };
-
-// Scale the DIV
-$("#myRange").on("input", function() {
-  $("#output").css("width", this.value + "px");
-  fitText("#fit");
-});
-
-// Change the DIV text
-$("#txt").on("input", function() {
-  $("#fit").text(this.value);
-  fitText("#fit");
-});
