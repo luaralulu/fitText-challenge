@@ -1,6 +1,6 @@
 # [FitText Challenge](https://luaralulu.github.io/fittext-challenge/)
 
-Frontend Challenge to fit Text dinamically withing a container.
+Frontend Challenge to fit Text dynamically withing a container.
 
 ## Bootstrap Template: [Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
 
