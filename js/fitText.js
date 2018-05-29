@@ -12,7 +12,7 @@ var fitText = function(e) {
 var reduce = function(e, fontSize) {
   $(e).css("font-size", fontSize);
   if (shouldReduce(e)) {
-    fontSize -= 1;
+    fontSize -= 2;
     reduce(e, fontSize);
   }
 };
