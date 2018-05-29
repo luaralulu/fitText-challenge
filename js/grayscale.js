@@ -1,6 +1,25 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  /*************************************
+   * Javascript for the CHALLENGE
+   */
+  // Scale the DIV
+  $("#myRange").on("input", function() {
+    $("#output").css("width", this.value + "px");
+    fitText("#fit");
+    //fitty("#fit");
+  });
+
+  // Change the DIV text
+  $("#txt").on("input", function() {
+    $("#fit").text(this.value);
+    fitText("#fit");
+  });
+  /**
+   * End of the code for the CHALLENGE
+   **************************************/
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (
