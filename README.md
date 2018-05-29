@@ -11,7 +11,6 @@ Frontend Challenge to fit Text dinamically withing a container.
 Choose one of the following options to get started:
 
 * [Download from Github](https://github.com/luaralulu/fittext-challenge)
-* Install via npm: `npm i fittext-challenge`
 * Clone the repo: `git clone https://github.com/luaralulu/fittext-challenge.git`
 * [Fork, Clone, or Download on GitHub](https://github.com/luaralulu/fittext-challenge)
 * [Access the live site](https://luaralulu.github.io/fittext-challenge/)
