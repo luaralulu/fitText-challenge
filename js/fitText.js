@@ -9,14 +9,6 @@ var fitText = function(e) {
   }
 };
 
-var shouldReduce = function(e) {
-  return $(e).height() > $("#output").height() || $(e).width() > $("#output").width() ? true : false;
-};
-
-var shouldIncrease = function(e) {
-  return $(e).height() < $("#output").height() && $(e).width() < $("#output").width() ? true : false;
-};
-
 var reduce = function(e, fontSize) {
   $(e).css("font-size", fontSize);
   if (shouldReduce(e)) {
@@ -32,3 +24,23 @@ var increase = function(e, fontSize) {
     increase(e, fontSize);
   }
 };
+
+var shouldReduce = function(e) {
+  return $(e).height() > $("#output").height() || $(e).width() > $("#output").width() ? true : false;
+};
+
+var shouldIncrease = function(e) {
+  return $(e).height() < $("#output").height() && $(e).width() < $("#output").width() ? true : false;
+};
+
+// Scale the DIV
+$("#myRange").on("input", function() {
+  $("#output").css("width", this.value + "px");
+  fitText("#fit");
+});
+
+// Change the DIV text
+$("#txt").on("input", function() {
+  $("#fit").text(this.value);
+  fitText("#fit");
+});
